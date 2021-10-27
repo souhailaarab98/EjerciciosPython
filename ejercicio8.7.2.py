@@ -19,7 +19,19 @@ def maxPos(lista):
         posicion += 1
     return maximo, posMax
 
+def maxCadena(lista):
+    maximo = ""
+    posicion = 0
+    posMax = 0
+    for i in lista:
+        if len(i) > len(maximo):
+            maximo = i
+            posMax = posicion
+        posicion += 1
+    return maximo, posMax
 
 lista = [5, 8, 9, 16, 5, 45, 0, 3]
+listaCadenas = ["hola", "Hola", "aaazedaajsnn", "ajsas", "haize", "ajzldd5"]
 print valorMax(lista)
 print maxPos(lista)
+print maxCadena(listaCadenas)
