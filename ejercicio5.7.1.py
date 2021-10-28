@@ -5,7 +5,7 @@ def promNotas():
     total = 0
     contador = 0
     while True:
-        num = input("introduce una nota(* para salir)")
+        num = input("introduce una nota(100 para salir)")
         if num == 100:
             break
         elif num < 0:
@@ -13,7 +13,7 @@ def promNotas():
         elif num > 0:
             total = total + num
             contador = contador + 1
-            num = raw_input("introduce otra nota(* para salir)")
+            num = raw_input("introduce otra nota(100 para salir)")
     return total / contador
 
 print promNotas()
